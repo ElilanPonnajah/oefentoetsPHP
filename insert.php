@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=filmclub', 'root', ''); // Pas de gegevens aan als nodig
+    $pdo = new PDO('mysql:host=localhost;dbname=filmclub', 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Kan geen verbinding maken met de database: " . $e->getMessage());
